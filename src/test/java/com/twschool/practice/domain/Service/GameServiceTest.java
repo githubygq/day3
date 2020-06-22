@@ -8,7 +8,7 @@ import org.mockito.Mockito;
 
 public class GameServiceTest {
 
-    @Test
+    /*@Test
     public void should_return_result_when_guess_number(){
         GameRepository gameRepository = Mockito.mock(GameRepository.class);
         GuessNumberGame guessNumberGame = Mockito.mock(GuessNumberGame.class);
@@ -19,5 +19,5 @@ public class GameServiceTest {
 
         Mockito.verify(gameRepository,Mockito.times(1)).find();
         Mockito.verify(guessNumberGame,Mockito.times(1));
-    }
+    }*/
 }

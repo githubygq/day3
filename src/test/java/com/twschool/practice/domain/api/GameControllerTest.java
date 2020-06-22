@@ -19,7 +19,7 @@ public class GameControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Test
+    /*@Test
     public void should_return_result_when_guess_number() throws Exception {
         this.mockMvc.perform(MockMvcRequestBuilders.post("/games/guess-numbers")
                 .contentType(MediaType.APPLICATION_JSON)
@@ -27,5 +27,15 @@ public class GameControllerTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.input").value("1 2 3 4"))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.result").value("4A0B"));
-    }
+    }*/
+
+    /*@Test
+    public void should_return_result_when_guess_number() throws Exception {
+        this.mockMvc.perform(MockMvcRequestBuilders.post("/games/guess-numbers")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content("{\"number\":\"1 2 3 4\"}"))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.input").value("1 2 3 4"))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.result").value("4A0B"));
+    }*/
 }

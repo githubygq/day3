@@ -32,4 +32,8 @@ public class GameAnswer {
                 .collect(Collectors.toSet());
         return answerNumbers.size() == 4 && answerNumberSet.size() == 4;
     }
+
+    public List<String> getAnswerNumbers() {
+        return answerNumbers;
+    }
 }

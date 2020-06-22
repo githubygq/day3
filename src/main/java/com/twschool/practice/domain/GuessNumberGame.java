@@ -33,4 +33,8 @@ public class GuessNumberGame {
     public GameStatus getStatus() {
         return gameStatus;
     }
+
+    public GameAnswer getGameAnswer() {
+        return gameAnswer;
+    }
 }
