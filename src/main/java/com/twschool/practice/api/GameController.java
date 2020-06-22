@@ -13,11 +13,15 @@ import java.util.Map;
 @RestController
 public class GameController {
 
+    private GameService gameService;
+
+    public GameController(GameService gameService){
+        this.gameService = gameService;
+    }
+
     @PostMapping("/games/guess-numbers")
     public Map<String,String> guess(@RequestBody Map<String,String> requestBody){
         Map<String,String> responseBody = new HashMap<>();
-
-        GameService gameService = new GameService(new GuessNumberGame(new AnswerGenerator()));
         responseBody.put("input",requestBody.get("number"));
         responseBody.put("result",gameService.guess(requestBody.get("number")));
 
